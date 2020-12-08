@@ -1,0 +1,96 @@
+/*
+* MAIN CSS
+*************************/
+
+body { 
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+h1, h2, h3, h4, h5 { font-weight: 500; }
+
+h1 {
+    font-size: 60px;
+    line-height: 1.3em;
+}
+
+div#main-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9;
+}
+
+.light { color: #fff; }
+
+.center { text-align: center };
+.left { text-align: left; }
+.right { text-align: right; }
+
+.container, .row {
+    max-width: 1280px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.row {
+    overflow: auto;
+    padding: 25px 0;
+}
+
+.section { padding: 60px 0; }
+
+.column-1-4 {
+    width: 22%;
+    float: left;
+}
+
+.column-1-2 {
+    width: 47%;
+    float: left;
+}
+
+.column { margin-right: 3%; }
+.column:last-child { margin-right: 0; }
+
+.nav-items li a { text-decoration: none; }
+.nav-items li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+ul.nav-items {
+    padding: 0;
+    text-align: center;
+}
+
+.logo-container { font-weight: bold; }
+
+.button.button-2 { background: #4385F3; }
+.button.button-1 { background: rgb(255 255 255 / .4); }
+.button {
+    padding: 10px 15px;
+    border: 0;
+    font-size: inherit;
+    border-radius: 3px;
+}
+
+#hero-section {
+    background: #123378;
+    height: 70vh;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+}
+
+#hero-section .module-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.module.hero-module { padding: 8% 0; }
+#hero-section .module-content p {
+    font-size: 24px;
+    font-weight: 100;
+    line-height: 1.6em;
+}
