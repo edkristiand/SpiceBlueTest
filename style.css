@@ -158,8 +158,10 @@ img.graph-image {
 
 
 @media ( min-width: 981px ) {
-    .flex-row {
+    .flex-row, .row.header-row {
         display: flex;
         align-items: center;
     }
+
+
 }
