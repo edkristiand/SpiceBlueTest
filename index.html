@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
     <title>Spice Blue Test</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/fontawesome.css" integrity="sha384-eHoocPgXsiuZh+Yy6+7DsKAerLXyJmu2Hadh4QYyt+8v86geixVYwFqUvMU8X90l" crossorigin="anonymous"/>
@@ -26,10 +26,16 @@
                     </div>
                 </div>
                 <div class="column column-1-4">
-                    <div class="button-container">
-                        <button href="#" class="button button-1 light">Sign up/Sign in</button>
-                        <button href="#" class="button button-2 light">Get Demo</button>
+                    <div id="button-icon-container">
+                        <div class="button-container">
+                            <button href="#" class="button button-1 light">Sign up/Sign in</button>
+                            <button href="#" class="button button-2 light">Get Demo</button>
+                        </div>
+                        <div id="burger-menu-icon">
+                            <span class="menu-icon light"><i class="fas fa-bars"></i></span>
+                        </div>
                     </div>
+                    
                 </div>
             </div>
         </div>
@@ -37,7 +43,7 @@
             <div id="hero-section" class="section">
                 <div class="row">
                     <div class="column column-1">
-                        <div class="module hero-module center light">
+                        <div class="module hero-module center light show-on-scroll">
                             <div class="module-content">
                                 <H1>Lorem ipsum dolor sit amet consectetur adipiscing.</H1>
                                 <p>Excepteur sint occaecat cupidatat non proident sunt in culpa <br>qui officia deserunt mollit anim non proident.</p>
@@ -49,18 +55,27 @@
             </div>
 
             <div id="section2" class="section">
+                <div class="row">
+                    <div class="column column-1 overlap-col">
+                        <div class="module main-graph show-on-scroll">
+                            <div class="module-content center">
+                                <img src="https://placehold.it/1280x600" class="graph-image"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="row row-900">
                     <div class="column column-1">
                         <div class="module center">
                             <div class="module-content">
-                                <h2>It’s what your sales and marketing teams have been looking for.</h2>
+                                <h2 class="show-on-scroll">It’s what your sales and marketing teams have been looking for.</h2>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="column column-3-5">
-                        <div class="module">
+                        <div class="module graph show-on-scroll">
                             <div class="module-content center">
                                 <img src="https://placehold.it/750x520" class="graph-image"/>
                                 <p class="graph-label">Revenue growth illustrations</p>
@@ -68,7 +83,7 @@
                         </div>
                     </div>
                     <div class="column column-2-5">
-                        <div class="module graph-description">
+                        <div class="module graph-description2 show-on-scroll">
                             <div class="module-content">
                                 <p>Hellomail is an sales engagement platform that helps you build meaningful customer engagement journeysby tracking and managing your leads. Be equippedwith the data firepower to automate and run successful outreach programs.</p>
 
@@ -89,14 +104,14 @@
                     <div class="column column-1">
                         <div class="module center">
                             <div class="module-content">
-                                <h2>It’s what your sales and marketing teams have been looking for.</h2>
+                                <h2 class="show-on-scroll">It’s what your sales and marketing teams have been looking for.</h2>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="column column-2-5">
-                        <div class="module graph-description">
+                        <div class="module graph-description show-on-scroll">
                             <div class="module-content">
                                 <p>Hellomail is an sales engagement platform that helps you build meaningful customer engagement journeysby tracking and managing your leads. Be equippedwith the data firepower to automate and run successful outreach programs.</p>
 
@@ -111,9 +126,9 @@
                         </div>
                     </div>
                     <div class="column column-3-5">
-                        <div class="module">
+                        <div class="module graph show-on-scroll">
                             <div class="module-content center">
-                                <img src="https://placehold.it/750x520" class="graph-image"/>
+                                <img src="https://placehold.it/750x520" class="graph-image show-on-scroll"/>
                                 <p class="graph-label">Revenue growth illustrations</p>
                             </div>
                         </div>
@@ -125,14 +140,14 @@
                     <div class="column column-1">
                         <div class="module center light">
                             <div class="module-content">
-                                <h2>Say hello to keeping it <br>smart and simple</h2>
+                                <h2 class="show-on-scroll">Say hello to keeping it <br>smart and simple</h2>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="row row-1080">
                     <div class="column column-1-2">
-                        <div class="module blurb-module">
+                        <div class="module blurb-module left-blurb show-on-scroll">
                             <div class="module-content">
                                 <div class="blurb-icon icon1"></div>
                                 <h3>Easy does it</h3>
@@ -140,7 +155,7 @@
                             </div>
                         </div>
 
-                        <div class="module blurb-module">
+                        <div class="module blurb-module left-blurb show-on-scroll">
                             <div class="module-content">
                                 <div class="blurb-icon icon2"></div>
                                 <h3>Convert and don't stop</h3>
@@ -149,7 +164,7 @@
                         </div>
                     </div>
                     <div class="column column-1-2">
-                        <div class="module blurb-module">
+                        <div class="module blurb-module right-blurb show-on-scroll">
                             <div class="module-content">
                                 <div class="blurb-icon icon3"></div>
                                 <h3>Go outbound, go big</h3>
@@ -157,7 +172,7 @@
                             </div>
                         </div>
 
-                        <div class="module blurb-module">
+                        <div class="module blurb-module right-blurb show-on-scroll">
                             <div class="module-content">
                                 <div class="blurb-icon icon4"></div>
                                 <h3>Do more with data power</h3>
@@ -169,5 +184,161 @@
             </div>
         </div>
     </div>
+
+    <div id="burger-menu">
+        <div class="row flex-row">
+            <div class="column column-1-2">
+                <div class="logo-container">
+                    <p>Logo Here</p>
+                </div>
+            </div>
+            <div class="column column-1-2">
+                <div id="burger-close-icon" class="right">
+                    <span><i class="fas fa-times"></i></span>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="row">
+                <div class="column column-1-2">
+                    <div id="parent-menu" class="menu-container">
+                        <ul class="menu-items">
+                            <li>
+                                <span class="hover-bg"></span>
+                                <a href="#">Services</a>
+                            </li>
+                            <li>
+                                <span class="hover-bg"></span>
+                                <a href="#">About</a>
+                            </li>
+                            <li>
+                                <span class="hover-bg"></span>
+                                <a href="#">Clients</a>
+                            </li>
+                            <li>
+                                <span class="hover-bg"></span>
+                                <a href="#">News</a>
+                            </li>
+                            <li>
+                                <span class="hover-bg"></span>
+                                <a href="#">Careers</a>
+                            </li>
+                            <li>
+                                <span class="hover-bg"></span>
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column column-1-4">
+                    <div class="sub-menu">
+                        <p class="sub-menu-title">Experiments</p>
+                        <ul class="menu-items">
+                            <li>
+                                <span class="hover-bg"></span>
+                                <span class="menu-item">Menu Item 1</span>
+                            </li>
+                            <li>
+                                <span class="hover-bg"></span>
+                                <span class="menu-item">Menu Item 2</span>
+                            </li>
+                            <li>
+                                <span class="hover-bg"></span>
+                                <span class="menu-item">Menu Item 3</span>
+                            </li>
+                            <li>
+                                <span class="hover-bg"></span>
+                                <span class="menu-item">Menu Item 4</span>
+                            </li>
+                            <li>
+                                <span class="hover-bg"></span>
+                                <span class="menu-item">Menu Item 5</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="sub-menu">
+                        <p class="sub-menu-title">Social</p>
+                        <ul class="menu-items social-items">
+                            <li>
+                                <span class="hover-bg"></span>
+                                <span class="menu-item">Twitter</span>
+                            </li>
+                            <li>
+                                <span class="hover-bg"></span>
+                                <span class="menu-item">Instagram</span>
+                            </li>
+                            <li>
+                                <span class="hover-bg"></span>
+                                <span class="menu-item">Dribble</span>
+                            </li>
+                            <li>
+                                <span class="hover-bg"></span>
+                                <span class="menu-item">Github</span>
+                            </li>
+                            <li>
+                                <span class="hover-bg"></span>
+                                <span class="menu-item">LinkedIn</span>
+                            </li>
+                            <li>
+                                <span class="hover-bg"></span>
+                                <span class="menu-item">Facebook</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column column-1-4">
+                    <div class="sub-menu">
+                        <p class="sub-menu-title">Misc</p>
+                        <ul class="menu-items">
+                            <li>
+                                <span class="hover-bg"></span>
+                                <span class="menu-item">Menu Item 1</span>
+                            </li>
+                            <li>
+                                <span class="hover-bg"></span>
+                                <span class="menu-item">Menu Item 2</span>
+                            </li>
+                            <li>
+                                <span class="hover-bg"></span>
+                                <span class="menu-item">Menu Item 3</span>
+                            </li>
+                            <li>
+                                <span class="hover-bg"></span>
+                                <span class="menu-item">Menu Item 4</span>
+                            </li>
+                            <li>
+                                <span class="hover-bg"></span>
+                                <span class="menu-item">Menu Item 5</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="sub-menu">
+                        <p class="sub-menu-title">Directions</p>
+                        <ul class="menu-items">
+                            <li>
+                                <span class="hover-bg"></span>
+                                <span class="menu-item">Menu Item 1</span>
+                            </li>
+                            <li>
+                                <span class="hover-bg"></span>
+                                <span class="menu-item">Menu Item 2</span>
+                            </li>
+                            <li>
+                                <span class="hover-bg"></span>
+                                <span class="menu-item">Menu Item 3</span>
+                            </li>
+                            <li>
+                                <span class="hover-bg"></span>
+                                <span class="menu-item">Menu Item 4</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/animation.js"></script>
 </body>
 </html>
