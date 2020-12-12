@@ -1,22 +1,6 @@
 var scroll = window.requestAnimationFrame || function(callback){ window.setTimeout(callback, 1000/60)};
 var elementsToShow = document.querySelectorAll('.show-on-scroll'); 
 
-let menu = document.querySelector('.sub-menu li .menu-item');
-
-// menu.addEventListener('mouseover', function(){
-//     let bg = document.querySelector('.hover-bg');
-//     bg.style.transform='translate(-30%, 0px)';
-// })
-
-// menu.addEventListener('mouseout', function(){
-//     let bg = document.querySelector('.hover-bg');
-//     bg.style.transform='translate(103%, 0px)';
-//     setTimeout(function(){
-//         bg.style.transform='translate3d(-103%, 0px, 0px)';
-//     }, 500)
-    
-// })
-
 let menuIcon = document.getElementById('burger-menu-icon');
 menuIcon.addEventListener('click', function(){
     let bg = document.getElementById('burger-menu');
